@@ -15,18 +15,5 @@ console.log(ver);
 //     console.log(key);
 //   });
 
-// async.waterfall([
-//     (callback)=>{
-//         console.log("one");
-//         callback(null, "one", "two")
-//     },
-//     (x,y,callback) => {
-//         console.log(x + " + " + y);
-//         callback(null, "done")
-//     }
-// ],(err, result)=>{
-//     console.log(result);
-// });
-
 //https://calibre-ebook.com/downloads/demos/demo.docx
 

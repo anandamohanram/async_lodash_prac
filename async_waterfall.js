@@ -23,3 +23,17 @@ async.waterfall([readFile, modifyContent, writeFile], (err, res) => {
     else
         console.log("res => " + res);
 });
+
+
+// async.waterfall([
+//     (callback)=>{
+//         console.log("one");
+//         callback(null, "one", "two")
+//     },
+//     (x,y,callback) => {
+//         console.log(x + " + " + y);
+//         callback(null, "done")
+//     }
+// ],(err, result)=>{
+//     console.log(result);
+// });
