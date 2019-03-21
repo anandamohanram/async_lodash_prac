@@ -1,0 +1,15 @@
+{
+  "name": "lodash_async",
+  "version": "1.0.0",
+  "description": "Practice lodash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ananda Mohanram",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "lodash": "^4.17.11"
+  }
+}
