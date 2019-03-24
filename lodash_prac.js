@@ -4,8 +4,8 @@ const _ = require('lodash')
 
 console.log("\n\n---------------------- each -----------------------------------");
 var arr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
-_.each(arr, function(number, index, numbersArr) {
-  console.log('number: ' + number);
+_.each(arr, function (number, index, numbersArr) {
+    console.log('number: ' + number);
 });
 
 
@@ -17,10 +17,10 @@ console.log(grp_arr);
 
 
 console.log("\n\n---------------------- find / extend --------------------------");
-var objArr = [{'name':'Andy'},{'name':'Benson'},{'name':'Chris'},{'name':'Daniel'},{'name':'Eric'}]
-_.find(objArr,(obj) => {
-    if(obj.name === 'Benson')
-        _.extend(obj,{"age": 25 });
+var objArr = [{ 'name': 'Andy' }, { 'name': 'Benson' }, { 'name': 'Chris' }, { 'name': 'Daniel' }, { 'name': 'Eric' }]
+_.find(objArr, (obj) => {
+    if (obj.name === 'Benson')
+        _.extend(obj, { "age": 25 });
 })
 console.log(objArr);
 
@@ -30,8 +30,8 @@ console.log("\n\n---------------------- clone / deepclone ----------------------
 const orgCar = {
     make: 'honda',
     model: 'civic',
-    color:{
-        exterior:'black',
+    color: {
+        exterior: 'black',
         interior: 'blue',
         highlights: 'red'
     }
@@ -49,13 +49,13 @@ console.log(orgCar);
 
 
 console.log("\n\n---------------------- slice ----------------------------------");
-console.log(_.slice(arr, arr.length-5));
-console.log(_.slice(arr,0,5));
+console.log(_.slice(arr, arr.length - 5));
+console.log(_.slice(arr, 0, 5));
 
 
 
 console.log("\n\n---------------------- times ----------------------------------");
-let i=0;
+let i = 0;
 const printAndIncrement = () => {
     console.log(i++);
 }
@@ -63,7 +63,7 @@ _.times(5, printAndIncrement);
 
 
 
-const printDelay = () => {console.log("\n\n-------------- delay - print after 2500ms ---------------------\n\n");}
+const printDelay = () => { console.log("\n\n-------------- delay - print after 2500ms ---------------------\n\n"); }
 _.delay(printDelay, 2500);
 
 
@@ -97,6 +97,6 @@ _.forIn(orgCar, (value, key) => {
 
 
 console.log("\n\n--------------------- reduce ------------------------------");
-const red = _.reduceRight(arr,(next, total) => { return `${total}-${next}`})
+const red = _.reduceRight(arr, (next, total) => { return `${total}-${next}` })
 console.log(red);
 
